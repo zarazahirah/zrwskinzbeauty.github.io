@@ -1,0 +1,77 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="pf.css">
+		<meta charsets="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+    <body>
+        <h2 style="text-align: center;">Checkout Order</h2>
+		<div class="row">
+			<div class="col-75">
+				<div class="container">
+					<form action="/action_page.php">
+						<div class="row">
+							<div class="col-58">
+								<h3>Billing Address</h3>
+			<label for="fname"><i class="fa fa-user"></i>Full Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Zara Zahirah bt Zahir">
+			
+			<label for="fname"><i class="fa fa-envelope"></i>Email</label>
+			<input type="text" id="email" name="email" placeholder="zarazahirah@gmail.com">
+			
+			<label for="fname"><i class="fa fa-address-caed-o"></i>Address</label>
+			<input type="text" id="adr" name="address" placeholder="D46 Jalan Restu">
+							
+			<label for="fname"><i class="fa fa-institution"></i>City</label>
+			<input type="text" id="city" name="city" placeholder="Alor Setar">
+			
+			<div class="row">
+				<div class="col-50">
+					<label for="state">State</label>
+					<input type="text" id="state" name="state" placeholder="Kedah">
+				</div>
+				<div class="col-50">
+				<label for="state">Zip</label>
+					<input type="text" id="zip" name="zip" placeholder="06600">
+				</div>
+			</div>
+			
+			<div class="col-50">
+				<h3>Product Choose</h3>
+				<td style="text-align: center; justify-content: center;">
+                                <select id="product">
+                                    <option disabled>---Choose Product---</option>
+                                    <option>Whitening Cream</option>
+                                    <option>Whitening Soap</option>
+									<option>Moisturizing Lotion</option>
+									<option>Facial Scrub</option>
+                                </select>
+                </td>
+			</div>
+			
+			<div class="col-50">
+				<h3>Payment</h3>
+				<label for="fname">Accepted Payment Menthod</label>
+				<td style="text-align: center; justify-content: center;">
+                                <select id="pymnt">
+                                    <option disabled>---Choose Payment Option---</option>
+                                    <option>Credit / Debit Card</option>
+                                    <option>Online Banking</option>
+									<option>Cash Payment at 7-Eleven</option>
+                                </select>
+                </td><br><br>
+			
+			</div>
+				<input type="checkbox" checked="checked" name="sameadr">Shipping address same as billing</label><br><br>
+				<input type="submit" value="Continue To Checkbox" class="btn" formaction="index.html">
+			
+							
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

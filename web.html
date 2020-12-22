@@ -1,0 +1,95 @@
+<html>
+<body>
+	 <h1>Enter your information in the form below : </h1>  
+	<br>
+
+				<form>
+                    <table border="1" style="width: 500px;">
+                        <tr style="height: 70px;">
+                            <td>
+                                <b>Staff Number : </b>
+                            </td>
+                            <td style="text-align: center; justify-content: center;">
+                                <input type="text" id="sn" placeholder="staffNumber" style="height: 35px; width: 180px;" required>
+                            </td>
+                        </tr>
+
+                        <tr style="height: 70px;">
+                            <td>
+                                <b>Name : </b>
+                            </td>
+                            <td style="text-align: center; justify-content: center;">
+                                <input type="text" id="n" placeholder="Name" style="height: 35px; width: 180px;" required>
+                            </td>
+                        </tr>
+
+                        <tr style="height: 70px;">
+                            <td>
+                                <b>Overtime (hours) : </b></td></td>
+                            </b>
+                            <td style="text-align: center; justify-content: center;">
+                               <input type="number" name="hours" required> 
+                            </td>
+                        </tr>
+
+                        <tr style="height: 70px;">
+                            <td>
+                                <b>Position : </b>
+                            </td>
+                            <td><select name=position>
+							<option value="Manager">Manager </option>
+							<option value="Executive">Executive </option>
+							<option value="Non-Executive">Non-Executive </option>
+							
+                               
+                            </td>
+                        </tr>
+
+                        <tr style="height: 70px;">
+                            <td>
+                                <b>Group : </b>
+                            </td>
+                            <td><input type=radio name=grp value=A>A
+							<input type=radio name=grp value=B>B
+							<input type=radio name=grp value=C>C
+                                
+                            </td>
+                        </tr>
+					</table>
+					<input type=submit value=Submit><input type=reset value="Clear Form">
+					<button onclick="run();">Submit</button>
+					</form>
+					<script>
+						function run()
+						{
+							if(|document.getElementById("n").value.lenght==0|document.getElementById("sn").value.lenght==0
+							{
+								alert("Empty value is found!");
+								return false;
+							}
+							var x=document.getElementById("hours");
+							
+							if(typeof x =='number')
+							{
+								return true;
+								}
+							else
+							{
+								alert("Overtime hours is not numeric value!");
+								return false;
+							}
+						}
+					</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
